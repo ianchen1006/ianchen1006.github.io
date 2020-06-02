@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>Hello Python!</title>
+      <link href="/2020/06/02/Hello-Python/"/>
+      <url>/2020/06/02/Hello-Python/</url>
+      
+        <content type="html"><![CDATA[<p>Python Basics</p><ul><li>Variable<ul><li>Specic, case-sensitive name</li><li>Call up value through variable name</li><li>ex: 1.79 m - 68.7 kg</li></ul></li><li>Python Types<ul><li>Integer: int</li><li>Float: float</li><li>Boolean: bool</li><li>String: str</li></ul></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>20200602</title>
+      <link href="/2020/06/02/0200602/"/>
+      <url>/2020/06/02/0200602/</url>
+      
+        <content type="html"><![CDATA[<p>sadsad</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2020/06/02/hello-world%20-%20Copy%20-%20Copy/"/>
       <url>/2020/06/02/hello-world%20-%20Copy%20-%20Copy/</url>
