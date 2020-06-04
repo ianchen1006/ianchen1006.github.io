@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="Subsetting lists  fam&#x3D;[‘liz’, 1.73, ‘emma’, 1.68, ‘mom’, 1.71, ‘dad’, 1.89] fam[3:5] [1.68, ‘mom’]   fam[-1] [1.89]   fam[:4] [‘liz’, 1.73, ‘emma’, 1.68]    Manipulating Lists  Change fam[0:2] &#x3D; [“lis">
+<meta name="description" content="*Hashmap in other programming language  1234567movie &#x3D; &amp;#123;&#39;name&#39;:&#39;Saving Private Ryan&#39;, #電影名稱         &#39;year&#39;:1998, #電影上映年份         &#39;director&#39;:&#39;Steven Spielberg&#39;,#導演         &#39;Writer&#39;: &#39;Robert Rodat&#39;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python Lists">
-<meta property="og:url" content="https://ianchen1006.github.io/2020/06/02/ython-Lists/index.html">
+<meta property="og:title" content="Python Dictionaries">
+<meta property="og:url" content="https://ianchen1006.github.io/2020/06/04/thon-Dictionaries/index.html">
 <meta property="og:site_name" content="ianblog">
-<meta property="og:description" content="Subsetting lists  fam&#x3D;[‘liz’, 1.73, ‘emma’, 1.68, ‘mom’, 1.71, ‘dad’, 1.89] fam[3:5] [1.68, ‘mom’]   fam[-1] [1.89]   fam[:4] [‘liz’, 1.73, ‘emma’, 1.68]    Manipulating Lists  Change fam[0:2] &#x3D; [“lis">
+<meta property="og:description" content="*Hashmap in other programming language  1234567movie &#x3D; &amp;#123;&#39;name&#39;:&#39;Saving Private Ryan&#39;, #電影名稱         &#39;year&#39;:1998, #電影上映年份         &#39;director&#39;:&#39;Steven Spielberg&#39;,#導演         &#39;Writer&#39;: &#39;Robert Rodat&#39;">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-06-02T04:07:38.000Z">
-<meta property="article:modified_time" content="2020-06-03T03:39:38.081Z">
+<meta property="article:published_time" content="2020-06-04T02:41:39.000Z">
+<meta property="article:modified_time" content="2020-06-04T03:15:36.030Z">
 <meta property="article:author" content="Ian Chen">
 <meta name="twitter:card" content="summary">
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="https://ianchen1006.github.io/2020/06/02/ython-Lists/"/>
+  <link rel="canonical" href="https://ianchen1006.github.io/2020/06/04/thon-Dictionaries/"/>
 
 
 
 
 
-  <title>Python Lists | ianblog</title>
+  <title>Python Dictionaries | ianblog</title>
   
 
 
@@ -305,7 +305,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ianchen1006.github.io/2020/06/02/ython-Lists/">
+    <link itemprop="mainEntityOfPage" href="https://ianchen1006.github.io/2020/06/04/thon-Dictionaries/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ian Chen">
@@ -322,7 +322,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Python Lists</h1>
+          <h1 class="post-title" itemprop="name headline">Python Dictionaries</h1>
         
 
         <div class="post-meta">
@@ -334,8 +334,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-06-02T12:07:38+08:00">
-                2020-06-02
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-06-04T10:41:39+08:00">
+                2020-06-04
               </time>
             
 
@@ -353,9 +353,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2020/06/02/ython-Lists/#comments" itemprop="discussionUrl">
+                <a href="/2020/06/04/thon-Dictionaries/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2020/06/02/ython-Lists/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2020/06/04/thon-Dictionaries/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -383,34 +383,24 @@
       
 
       
-        <p>Subsetting lists</p>
-<ul>
-<li>fam=[‘liz’, 1.73, ‘emma’, 1.68, ‘mom’, 1.71, ‘dad’, 1.89]</li>
-<li>fam[3:5]<ul>
-<li>[1.68, ‘mom’]</li>
+        <p>*Hashmap in other programming language </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">movie = &#123;<span class="string">'name'</span>:<span class="string">'Saving Private Ryan'</span>, <span class="comment">#電影名稱</span></span><br><span class="line">         <span class="string">'year'</span>:<span class="number">1998</span>, <span class="comment">#電影上映年份</span></span><br><span class="line">         <span class="string">'director'</span>:<span class="string">'Steven Spielberg'</span>,<span class="comment">#導演</span></span><br><span class="line">         <span class="string">'Writer'</span>: <span class="string">'Robert Rodat'</span>, <span class="comment">#編劇</span></span><br><span class="line">         <span class="string">'Stars'</span>:[<span class="string">'Tom Hanks'</span>, <span class="string">'Matt Damon'</span>, <span class="string">'Tom Sizemore'</span>],<span class="comment">#明星</span></span><br><span class="line">         <span class="string">'Oscar '</span>:[<span class="string">'Best Director'</span>,<span class="string">'Best Cinematography'</span>,<span class="string">'Best Sound'</span>,<span class="string">'Best Film Editing'</span>,<span class="string">'Best Effects, Sound Effects Editing'</span>]</span><br><span class="line">         <span class="comment">#獲得的奧斯卡獎項&#125;</span></span><br></pre></td></tr></table></figure>
+<p>Create a dictionary</p>
+<ol>
+<li>Using {}</li>
+<li>dict</li>
+</ol>
+<p>Update in a dictionary</p>
+<ol>
+<li>update<ul>
+<li>movie_1[‘star’] = “Tom Hank”</li>
 </ul>
 </li>
-<li>fam[-1]<ul>
-<li>[1.89]</li>
-</ul>
+<li>Update()<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#如果一次要update很多value at a time 用update method就會比較方便</span></span><br><span class="line">temp_dict = &#123;<span class="string">'writer'</span>: <span class="string">'Robert Rodat'</span>, <span class="comment">#編劇</span></span><br><span class="line">         <span class="string">'stars'</span>:[<span class="string">'Tom Hanks'</span>, <span class="string">'Matt Damon'</span>, <span class="string">'Tom Sizemore'</span>],<span class="comment">#明星</span></span><br><span class="line">         <span class="string">'Oscar '</span>:[<span class="string">'Best Director'</span>,<span class="string">'Best Cinematography'</span>,<span class="string">'Best Sound'</span>,<span class="string">'Best Film Editing'</span>,<span class="string">'Best Effects, Sound Effects Editing'</span>]</span><br><span class="line">         &#125;</span><br><span class="line">movie_1.update(temp_dict)</span><br><span class="line">print(movie_1)</span><br></pre></td></tr></table></figure>
+
 </li>
-<li>fam[:4]<ul>
-<li>[‘liz’, 1.73, ‘emma’, 1.68]</li>
-</ul>
-</li>
-</ul>
-<p>Manipulating Lists</p>
-<ul>
-<li>Change<ul>
-<li>fam[0:2] = [“lisa”, 1.74]</li>
-</ul>
-</li>
-<li>Add &amp; Remove<ul>
-<li>fam_ext = fam + [“me”, 1.79]</li>
-<li>del(fam[2])</li>
-</ul>
-</li>
-</ul>
+</ol>
+<p>source: <a href="https://medium.com/ccclub/ccclub-python-for-beginners-tutorial-533b8d8d96f3" target="_blank" rel="noopener">https://medium.com/ccclub/ccclub-python-for-beginners-tutorial-533b8d8d96f3</a></p>
 
       
     </div>
@@ -435,8 +425,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/06/02/Hello-Python/" rel="next" title="Python Basics">
-                <i class="fa fa-chevron-left"></i> Python Basics
+              <a href="/2020/06/04/tplotlib/" rel="next" title="Matplotlib">
+                <i class="fa fa-chevron-left"></i> Matplotlib
               </a>
             
           </div>
@@ -444,10 +434,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/06/03/ython-Functions/" rel="prev" title="Python Functions">
-                Python Functions <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -736,9 +722,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://ianchen1006.github.io/2020/06/02/ython-Lists/';
-          this.page.identifier = '2020/06/02/ython-Lists/';
-          this.page.title = 'Python Lists';
+          this.page.url = 'https://ianchen1006.github.io/2020/06/04/thon-Dictionaries/';
+          this.page.identifier = '2020/06/04/thon-Dictionaries/';
+          this.page.title = 'Python Dictionaries';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://ianchen1006.disqus.com/embed.js';

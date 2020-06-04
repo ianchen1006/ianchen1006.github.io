@@ -304,6 +304,295 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ianchen1006.github.io/2020/06/04/thon-Dictionaries/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Ian Chen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/profile.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ianblog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/06/04/thon-Dictionaries/" itemprop="url">Python Dictionaries</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-06-04T10:41:39+08:00">
+                2020-06-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/06/04/thon-Dictionaries/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2020/06/04/thon-Dictionaries/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>*Hashmap in other programming language </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">movie = &#123;<span class="string">'name'</span>:<span class="string">'Saving Private Ryan'</span>, <span class="comment">#電影名稱</span></span><br><span class="line">         <span class="string">'year'</span>:<span class="number">1998</span>, <span class="comment">#電影上映年份</span></span><br><span class="line">         <span class="string">'director'</span>:<span class="string">'Steven Spielberg'</span>,<span class="comment">#導演</span></span><br><span class="line">         <span class="string">'Writer'</span>: <span class="string">'Robert Rodat'</span>, <span class="comment">#編劇</span></span><br><span class="line">         <span class="string">'Stars'</span>:[<span class="string">'Tom Hanks'</span>, <span class="string">'Matt Damon'</span>, <span class="string">'Tom Sizemore'</span>],<span class="comment">#明星</span></span><br><span class="line">         <span class="string">'Oscar '</span>:[<span class="string">'Best Director'</span>,<span class="string">'Best Cinematography'</span>,<span class="string">'Best Sound'</span>,<span class="string">'Best Film Editing'</span>,<span class="string">'Best Effects, Sound Effects Editing'</span>]</span><br><span class="line">         <span class="comment">#獲得的奧斯卡獎項&#125;</span></span><br></pre></td></tr></table></figure>
+<p>Create a dictionary</p>
+<ol>
+<li>Using {}</li>
+<li>dict</li>
+</ol>
+<p>Update in a dictionary</p>
+<ol>
+<li>update<ul>
+<li>movie_1[‘star’] = “Tom Hank”</li>
+</ul>
+</li>
+<li>Update()<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#如果一次要update很多value at a time 用update method就會比較方便</span></span><br><span class="line">temp_dict = &#123;<span class="string">'writer'</span>: <span class="string">'Robert Rodat'</span>, <span class="comment">#編劇</span></span><br><span class="line">         <span class="string">'stars'</span>:[<span class="string">'Tom Hanks'</span>, <span class="string">'Matt Damon'</span>, <span class="string">'Tom Sizemore'</span>],<span class="comment">#明星</span></span><br><span class="line">         <span class="string">'Oscar '</span>:[<span class="string">'Best Director'</span>,<span class="string">'Best Cinematography'</span>,<span class="string">'Best Sound'</span>,<span class="string">'Best Film Editing'</span>,<span class="string">'Best Effects, Sound Effects Editing'</span>]</span><br><span class="line">         &#125;</span><br><span class="line">movie_1.update(temp_dict)</span><br><span class="line">print(movie_1)</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>source: <a href="https://medium.com/ccclub/ccclub-python-for-beginners-tutorial-533b8d8d96f3" target="_blank" rel="noopener">https://medium.com/ccclub/ccclub-python-for-beginners-tutorial-533b8d8d96f3</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ianchen1006.github.io/2020/06/04/tplotlib/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Ian Chen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/profile.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ianblog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/06/04/tplotlib/" itemprop="url">Matplotlib</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-06-04T10:28:28+08:00">
+                2020-06-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/06/04/tplotlib/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2020/06/04/tplotlib/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Data visualization</p>
+<ul>
+<li>Very important in Data Analysis<ul>
+<li>Explore data</li>
+<li>Report insights</li>
+</ul>
+</li>
+</ul>
+<p>Matplotlib</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">year = [<span class="number">1950</span>, <span class="number">1970</span>, <span class="number">1990</span>, <span class="number">2010</span>]</span><br><span class="line">pop = [<span class="number">2.519</span>, <span class="number">3.692</span>, <span class="number">5.263</span>, <span class="number">6.972</span>]</span><br><span class="line">plt.plot(year, pop) // Plot</span><br><span class="line">plt.scatter(year, pop) // Scatter</span><br><span class="line">plt.hist(values, bins=<span class="number">3</span>) // Histogram</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p>Matplotlib entire practice</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">year = [<span class="number">1950</span>, <span class="number">1951</span>, <span class="number">1952</span>, ..., <span class="number">2100</span>]</span><br><span class="line">pop = [<span class="number">2.538</span>, <span class="number">2.57</span>, <span class="number">2.62</span>, ..., <span class="number">10.85</span>]</span><br><span class="line"><span class="comment"># Add more data // simply use +</span></span><br><span class="line">year = [<span class="number">1800</span>, <span class="number">1850</span>, <span class="number">1900</span>] + year</span><br><span class="line">pop = [<span class="number">1.0</span>, <span class="number">1.262</span>, <span class="number">1.650</span>] + pop</span><br><span class="line">plt.plot(year, pop)</span><br><span class="line">plt.xlabel(<span class="string">'Year'</span>)</span><br><span class="line">plt.ylabel(<span class="string">'Population'</span>)</span><br><span class="line">plt.title(<span class="string">'World Population Projections'</span>)</span><br><span class="line">plt.yticks([<span class="number">0</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>, <span class="number">8</span>, <span class="number">10</span>],</span><br><span class="line">[<span class="string">'0'</span>, <span class="string">'2B'</span>, <span class="string">'4B'</span>, <span class="string">'6B'</span>, <span class="string">'8B'</span>, <span class="string">'10B]) // Customize for clarity and simplicity</span></span><br><span class="line"><span class="string">plt.show()</span></span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://ianchen1006.github.io/2020/06/03/ython-Functions/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -419,7 +708,6 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># np_baseball is available</span></span><br><span class="line"><span class="comment"># Import numpy</span></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="comment"># Create np_height_in from np_baseball</span></span><br><span class="line">np_height_in = np.array(np_baseball[:,<span class="number">0</span>])</span><br><span class="line">print(np_height_in)</span><br><span class="line"><span class="comment"># Print out the mean of np_height_in</span></span><br><span class="line">print(np.mean(np_height_in))</span><br><span class="line"><span class="comment"># Print out the median of np_height_in</span></span><br><span class="line">print(np.median(np_height_in))</span><br></pre></td></tr></table></figure>
 <p>Blend it all together</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># heights and positions are available as lists</span></span><br><span class="line"><span class="comment"># Import numpy</span></span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="comment"># Convert positions and heights to numpy arrays: np_positions, np_heights</span></span><br><span class="line">np_positions = np.array(positions)</span><br><span class="line">np_heights = np.array(heights)</span><br><span class="line"><span class="comment"># Heights of the goalkeepers: gk_heights</span></span><br><span class="line">gk_heights = np_heights[np_positions==<span class="string">'GK'</span>]</span><br><span class="line"><span class="comment"># Heights of the other players: other_heights</span></span><br><span class="line">other_heights = np_heights[np_positions!=<span class="string">'GK'</span>]</span><br><span class="line"><span class="comment"># Print out the median height of goalkeepers. Replace 'None'</span></span><br><span class="line">print(<span class="string">"Median height of goalkeepers: "</span> + str(np.median(gk_heights)))</span><br><span class="line"><span class="comment"># Print out the median height of other players. Replace 'None'</span></span><br><span class="line">print(<span class="string">"Median height of other players: "</span> + str(np.median(other_heights)))</span><br></pre></td></tr></table></figure>
-
           
         
       
@@ -808,7 +1096,7 @@
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
