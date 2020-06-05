@@ -87,7 +87,7 @@
 <meta property="og:description" content="*Hashmap in other programming language  1234567movie &#x3D; &amp;#123;&#39;name&#39;:&#39;Saving Private Ryan&#39;, #電影名稱         &#39;year&#39;:1998, #電影上映年份         &#39;director&#39;:&#39;Steven Spielberg&#39;,#導演         &#39;Writer&#39;: &#39;Robert Rodat&#39;">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-06-04T02:41:39.000Z">
-<meta property="article:modified_time" content="2020-06-04T03:15:36.030Z">
+<meta property="article:modified_time" content="2020-06-04T04:10:24.299Z">
 <meta property="article:author" content="Ian Chen">
 <meta name="twitter:card" content="summary">
 
@@ -397,10 +397,9 @@
 </ul>
 </li>
 <li>Update()<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#如果一次要update很多value at a time 用update method就會比較方便</span></span><br><span class="line">temp_dict = &#123;<span class="string">'writer'</span>: <span class="string">'Robert Rodat'</span>, <span class="comment">#編劇</span></span><br><span class="line">         <span class="string">'stars'</span>:[<span class="string">'Tom Hanks'</span>, <span class="string">'Matt Damon'</span>, <span class="string">'Tom Sizemore'</span>],<span class="comment">#明星</span></span><br><span class="line">         <span class="string">'Oscar '</span>:[<span class="string">'Best Director'</span>,<span class="string">'Best Cinematography'</span>,<span class="string">'Best Sound'</span>,<span class="string">'Best Film Editing'</span>,<span class="string">'Best Effects, Sound Effects Editing'</span>]</span><br><span class="line">         &#125;</span><br><span class="line">movie_1.update(temp_dict)</span><br><span class="line">print(movie_1)</span><br></pre></td></tr></table></figure>
-
-</li>
+Subset dictionary<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Dictionary of dictionaries</span></span><br><span class="line">europe = &#123; <span class="string">'spain'</span>: &#123; <span class="string">'capital'</span>:<span class="string">'madrid'</span>, <span class="string">'population'</span>:<span class="number">46.77</span> &#125;,</span><br><span class="line">           <span class="string">'france'</span>: &#123; <span class="string">'capital'</span>:<span class="string">'paris'</span>, <span class="string">'population'</span>:<span class="number">66.03</span> &#125;,</span><br><span class="line">           <span class="string">'germany'</span>: &#123; <span class="string">'capital'</span>:<span class="string">'berlin'</span>, <span class="string">'population'</span>:<span class="number">80.62</span> &#125;,</span><br><span class="line">           <span class="string">'norway'</span>: &#123; <span class="string">'capital'</span>:<span class="string">'oslo'</span>, <span class="string">'population'</span>:<span class="number">5.084</span> &#125; &#125;</span><br><span class="line"><span class="comment"># Print out the capital of France</span></span><br><span class="line"><span class="comment"># Create sub-dictionary data. Create a dictionary, named data, with the keys 'capital' and 'population'</span></span><br><span class="line">data = dict()</span><br><span class="line"><span class="keyword">for</span> k <span class="keyword">in</span> europe:</span><br><span class="line">    data[europe[k][<span class="string">'capital'</span>]] = europe[k][<span class="string">'population'</span>]</span><br><span class="line">print(data)</span><br></pre></td></tr></table></figure>
+source: <a href="https://medium.com/ccclub/ccclub-python-for-beginners-tutorial-533b8d8d96f3" target="_blank" rel="noopener">https://medium.com/ccclub/ccclub-python-for-beginners-tutorial-533b8d8d96f3</a></li>
 </ol>
-<p>source: <a href="https://medium.com/ccclub/ccclub-python-for-beginners-tutorial-533b8d8d96f3" target="_blank" rel="noopener">https://medium.com/ccclub/ccclub-python-for-beginners-tutorial-533b8d8d96f3</a></p>
 
       
     </div>
@@ -434,6 +433,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/06/04/andas/" rel="prev" title="Pandas">
+                Pandas <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -515,7 +518,7 @@
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
