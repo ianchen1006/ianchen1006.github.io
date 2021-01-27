@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="Python Basics  Variable Specic, case-sensitive name Call up value through variable name ex: 1.79 m - 68.7 kg   Python Types Integer: int Float: float Boolean: bool String: str">
+<meta name="description" content="Inspecting a DataFrame  head() returns the first few rows (the “head” of the DataFrame). info() shows information on each of the columns, such as the data type and number of missing values. .shape ret">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python Basics">
-<meta property="og:url" content="https://ianchen1006.github.io/2020/06/02/Hello-Python/index.html">
+<meta property="og:title" content="Data Manipulation with pandas">
+<meta property="og:url" content="https://ianchen1006.github.io/2020/06/10/ata-Manipulation-with-pandas/index.html">
 <meta property="og:site_name" content="ianblog">
-<meta property="og:description" content="Python Basics  Variable Specic, case-sensitive name Call up value through variable name ex: 1.79 m - 68.7 kg   Python Types Integer: int Float: float Boolean: bool String: str">
+<meta property="og:description" content="Inspecting a DataFrame  head() returns the first few rows (the “head” of the DataFrame). info() shows information on each of the columns, such as the data type and number of missing values. .shape ret">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-06-02T03:58:07.000Z">
-<meta property="article:modified_time" content="2020-06-03T03:40:36.767Z">
+<meta property="article:published_time" content="2020-06-10T05:27:19.000Z">
+<meta property="article:modified_time" content="2020-06-10T07:34:40.706Z">
 <meta property="article:author" content="Ian Chen">
 <meta name="twitter:card" content="summary">
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="https://ianchen1006.github.io/2020/06/02/Hello-Python/"/>
+  <link rel="canonical" href="https://ianchen1006.github.io/2020/06/10/ata-Manipulation-with-pandas/"/>
 
 
 
 
 
-  <title>Python Basics | ianblog</title>
+  <title>Data Manipulation with pandas | ianblog</title>
   
 
 
@@ -305,7 +305,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ianchen1006.github.io/2020/06/02/Hello-Python/">
+    <link itemprop="mainEntityOfPage" href="https://ianchen1006.github.io/2020/06/10/ata-Manipulation-with-pandas/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Ian Chen">
@@ -322,7 +322,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Python Basics</h1>
+          <h1 class="post-title" itemprop="name headline">Data Manipulation with pandas</h1>
         
 
         <div class="post-meta">
@@ -334,8 +334,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-06-02T11:58:07+08:00">
-                2020-06-02
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-06-10T13:27:19+08:00">
+                2020-06-10
               </time>
             
 
@@ -353,9 +353,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2020/06/02/Hello-Python/#comments" itemprop="discussionUrl">
+                <a href="/2020/06/10/ata-Manipulation-with-pandas/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2020/06/02/Hello-Python/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2020/06/10/ata-Manipulation-with-pandas/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -383,22 +383,26 @@
       
 
       
-        <p>Python Basics</p>
-<ul>
-<li>Variable<ul>
-<li>Specic, case-sensitive name</li>
-<li>Call up value through variable name</li>
-<li>ex: 1.79 m - 68.7 kg</li>
-</ul>
-</li>
-<li>Python Types<ul>
-<li>Integer: int</li>
-<li>Float: float</li>
-<li>Boolean: bool</li>
-<li>String: str</li>
-</ul>
-</li>
-</ul>
+        <p>Inspecting a DataFrame</p>
+<ol>
+<li>head() returns the first few rows (the “head” of the DataFrame).</li>
+<li>info() shows information on each of the columns, such as the data type and number of missing values.</li>
+<li>.shape returns the number of rows and columns of the DataFrame.</li>
+<li>.describe() calculates a few summary statistics for each column.</li>
+</ol>
+<p>Parts of a DataFrame</p>
+<ol>
+<li>.values: A two-dimensional NumPy array of values.</li>
+<li>.columns: An index of columns: the column names.</li>
+<li>..index: An index for the rows: either row numbers or row names.</li>
+</ol>
+<p>Sort by ascending or descending</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Sort homelessness by region, then descending family members</span></span><br><span class="line">homelessness_reg_fam = homelessness.sort_values([<span class="string">"region"</span>, <span class="string">"family_members"</span>], ascending=[<span class="literal">True</span>, <span class="literal">False</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># Print the top few rows</span></span><br><span class="line">print(homelessness_reg_fam.head())</span><br><span class="line">`</span><br></pre></td></tr></table></figure>
+
+<p>Subsetting rows by categorical variables</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">colors = [<span class="string">"brown"</span>, <span class="string">"black"</span>, <span class="string">"tan"</span>]</span><br><span class="line">condition = dogs[<span class="string">"color"</span>].isin(colors)</span><br><span class="line">dogs[condition]</span><br></pre></td></tr></table></figure>
+
+
 
       
     </div>
@@ -423,15 +427,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2020/06/05/rojects-PROJECT-TV-HALFTIME-SHOWS-AND-THE-BIG-GAME/" rel="next" title="Projects : PROJECT: TV, HALFTIME SHOWS, AND THE BIG GAME">
+                <i class="fa fa-chevron-left"></i> Projects : PROJECT: TV, HALFTIME SHOWS, AND THE BIG GAME
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/06/02/ython-Lists/" rel="prev" title="Python Lists">
-                Python Lists <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -720,9 +724,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://ianchen1006.github.io/2020/06/02/Hello-Python/';
-          this.page.identifier = '2020/06/02/Hello-Python/';
-          this.page.title = 'Python Basics';
+          this.page.url = 'https://ianchen1006.github.io/2020/06/10/ata-Manipulation-with-pandas/';
+          this.page.identifier = '2020/06/10/ata-Manipulation-with-pandas/';
+          this.page.title = 'Data Manipulation with pandas';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://ianchen1006.disqus.com/embed.js';

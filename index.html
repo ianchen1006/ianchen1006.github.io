@@ -304,6 +304,300 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ianchen1006.github.io/2020/06/10/ata-Manipulation-with-pandas/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Ian Chen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/profile.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ianblog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/06/10/ata-Manipulation-with-pandas/" itemprop="url">Data Manipulation with pandas</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-06-10T13:27:19+08:00">
+                2020-06-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/06/10/ata-Manipulation-with-pandas/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2020/06/10/ata-Manipulation-with-pandas/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>Inspecting a DataFrame</p>
+<ol>
+<li>head() returns the first few rows (the “head” of the DataFrame).</li>
+<li>info() shows information on each of the columns, such as the data type and number of missing values.</li>
+<li>.shape returns the number of rows and columns of the DataFrame.</li>
+<li>.describe() calculates a few summary statistics for each column.</li>
+</ol>
+<p>Parts of a DataFrame</p>
+<ol>
+<li>.values: A two-dimensional NumPy array of values.</li>
+<li>.columns: An index of columns: the column names.</li>
+<li>..index: An index for the rows: either row numbers or row names.</li>
+</ol>
+<p>Sort by ascending or descending</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Sort homelessness by region, then descending family members</span></span><br><span class="line">homelessness_reg_fam = homelessness.sort_values([<span class="string">"region"</span>, <span class="string">"family_members"</span>], ascending=[<span class="literal">True</span>, <span class="literal">False</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># Print the top few rows</span></span><br><span class="line">print(homelessness_reg_fam.head())</span><br><span class="line">`</span><br></pre></td></tr></table></figure>
+
+<p>Subsetting rows by categorical variables</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">colors = [<span class="string">"brown"</span>, <span class="string">"black"</span>, <span class="string">"tan"</span>]</span><br><span class="line">condition = dogs[<span class="string">"color"</span>].isin(colors)</span><br><span class="line">dogs[condition]</span><br></pre></td></tr></table></figure>
+
+
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ianchen1006.github.io/2020/06/05/rojects-PROJECT-TV-HALFTIME-SHOWS-AND-THE-BIG-GAME/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Ian Chen">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/profile.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ianblog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/06/05/rojects-PROJECT-TV-HALFTIME-SHOWS-AND-THE-BIG-GAME/" itemprop="url">Projects : PROJECT: TV, HALFTIME SHOWS, AND THE BIG GAME</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-06-05T13:49:55+08:00">
+                2020-06-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/06/05/rojects-PROJECT-TV-HALFTIME-SHOWS-AND-THE-BIG-GAME/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2020/06/05/rojects-PROJECT-TV-HALFTIME-SHOWS-AND-THE-BIG-GAME/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ol>
+<li>TV, halftime shows, and the Big Game</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Import pandas</span></span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment"># Load the CSV data into DataFrames</span></span><br><span class="line">super_bowls = pd.read_csv(<span class="string">"datasets/super_bowls.csv"</span>)</span><br><span class="line">tv = pd.read_csv(<span class="string">"datasets/tv.csv"</span>)</span><br><span class="line">halftime_musicians = pd.read_csv(<span class="string">"datasets/halftime_musicians.csv"</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Display the first five rows of each DataFrame</span></span><br><span class="line">display(super_bowls.head())</span><br><span class="line">display(tv.head())</span><br><span class="line">display(halftime_musicians.head())</span><br></pre></td></tr></table></figure>
+<p>2.Taking note of dataset issues</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Summary of the TV data to inspect</span></span><br><span class="line">tv.info()</span><br><span class="line"></span><br><span class="line">print(<span class="string">'\n'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Summary of the halftime musician data to inspect</span></span><br><span class="line">halftime_musicians.info()</span><br></pre></td></tr></table></figure>
+<p>Side practice</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">student=pd.read_csv(<span class="string">'C:\\Users\\User\\python\\108_student.csv'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Display the first five rows of each DataFrame</span></span><br><span class="line">display(student.head())</span><br></pre></td></tr></table></figure>
+<p>3.Combined points distribution</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Import matplotlib and set plotting style</span></span><br><span class="line"><span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</span><br><span class="line">%matplotlib inline</span><br><span class="line">plt.style.use(<span class="string">'seaborn'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Plot a histogram of combined points</span></span><br><span class="line">plt.xlabel(<span class="string">'Combined Points'</span>)</span><br><span class="line">plt.ylabel(<span class="string">'Number of Super Bowls'</span>)</span><br><span class="line">plt.hist(super_bowls[<span class="string">'combined_pts'</span>],bins = <span class="number">5</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Display the Super Bowls with the highest and lowest combined scores</span></span><br><span class="line">display(super_bowls[super_bowls[<span class="string">'combined_pts'</span>] &gt; <span class="number">70</span>])</span><br><span class="line">display(super_bowls[<span class="number">25</span> &lt; super_bowls[<span class="string">'combined_pts'</span>]])<span class="comment">#display(super_bowls[25 &lt; super_bowls['combined_pts']])</span></span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>Do blowouts translate to lost viewers?</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># Join game and TV data, filtering out SB I because it was split over two networks</span></span><br><span class="line">games_tv = pd.merge(tv[tv[<span class="string">'super_bowl'</span>] &gt; <span class="number">1</span>], super_bowls, on=<span class="string">'super_bowl'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Import seaborn</span></span><br><span class="line"><span class="keyword">import</span> seaborn <span class="keyword">as</span> sns</span><br><span class="line"></span><br><span class="line"><span class="comment"># ... YOUR CODE FOR TASK 5 ...</span></span><br><span class="line"><span class="comment"># Create a scatter plot with a linear regression model fit</span></span><br><span class="line">sns.regplot(x=<span class="string">'difference_pts'</span>, y=<span class="string">'share_household'</span>, data=games_tv)</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://ianchen1006.github.io/2020/06/04/andas/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1226,7 +1520,7 @@ source: <a href="https://medium.com/ccclub/ccclub-python-for-beginners-tutorial-
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1283,7 +1577,7 @@ source: <a href="https://medium.com/ccclub/ccclub-python-for-beginners-tutorial-
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
